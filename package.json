@@ -1,0 +1,15 @@
+{
+  "name": "bland-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "zhoutao <zhoutao_233@163.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3",
+    "vuepress": "^2.0.0-beta.41"
+  }
+}
