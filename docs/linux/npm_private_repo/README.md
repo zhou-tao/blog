@@ -83,8 +83,6 @@ verdaccio
  warn --- Plugin successfully loaded: verdaccio-htpasswd
  warn --- Plugin successfully loaded: verdaccio-audit
  warn --- http address - http://localhost:4873/ - verdaccio/5.10.0
-
-
 ```
 
 现在你可以在本机查看到4873端口已成功开启`verdaccio`服务
@@ -142,7 +140,7 @@ pm2 ls
 │ id  │ name         │ namespace   │ version │ mode    │ pid      │ uptime │ ↺    │ status    │ cpu      │ mem      │ user     │ watching │
 ├─────┼──────────────┼─────────────┼─────────┼─────────┼──────────┼────────┼──────┼───────────┼──────────┼──────────┼──────────┼──────────┤
 │ 0   │ verdaccio    │ default     │ N/A     │ fork    │ 7488     │ 15h    │ 0    │ online    │ 0%       │ 114.4mb  │ root     │ disabled │
-
+│─────│──────────────│─────────────│─────────│─────────│──────────│────────│──────│───────────│──────────│──────────│──────────│──────────│
 # 最后检查端口情况
 netstat -ntulp |grep 4873
 tcp     0    0.0.0.0:4873     LISTEN      7488/Verdaccio
@@ -150,7 +148,7 @@ tcp     0    0.0.0.0:4873     LISTEN      7488/Verdaccio
 
 最后，若服务器开启防火墙则需要将4873端口放行，若类似阿里云等云服务器需平台开放端口才可访问，最后即可完成本地的私库访问了。
 
-### 发布一个包
+### 发布第一个包
 
 ```shell
 # 设置npm源为服务器私库地址 （建议使用yrm管理多源切换）

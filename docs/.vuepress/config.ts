@@ -38,7 +38,13 @@ export default defineUserConfig({
       },
       {
         text: ' Linux',
-        link: '/linux/'
+        link: '/linux/',
+        children: [
+          {
+            text: '搭建NPM私库',
+            link: '/linux/npm_private_repo/'
+          }
+        ]
       },
       {
         text: ' 更多',
