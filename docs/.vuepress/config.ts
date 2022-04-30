@@ -9,14 +9,17 @@ export default defineUserConfig({
   description: '一个简单的博客',
   theme: defaultTheme({
     repo: 'zhou-tao/blog',
+    navbar: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide' },
+    ],
     sidebar: [
       {
-        text: '封面',
-        link: '/'
+        text: 'Guide',
+        link: '/guide'
       },
       {
-        text: '前端',
-        link: '/frontend/js',
+        text: 'FrondEnd',
         children: [
           {
             text: 'Javascript',
@@ -38,7 +41,6 @@ export default defineUserConfig({
       },
       {
         text: ' Linux',
-        link: '/linux/',
         children: [
           {
             text: '搭建NPM私库',
@@ -47,18 +49,22 @@ export default defineUserConfig({
         ]
       },
       {
-        text: ' 更多',
-        link: '/other/gis',
+        text: 'Algorithm',
+        link: '/algorithm'
+      },
+      {
+        text: 'More',
         children: [
           {
             text: 'GIS',
-            link: '/other/gis/'
+            link: '/more/gis/'
           }
         ]
       }
     ]
   }),
   plugins: [
+    '@vuepress/back-to-top',
     docsearchPlugin({
       appId: '',
       apiKey: '',
