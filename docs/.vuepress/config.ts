@@ -1,6 +1,7 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 
 export default defineUserConfig({
   base: '/blog/',
@@ -50,7 +51,12 @@ export default defineUserConfig({
       },
       {
         text: 'Algorithm',
-        link: '/algorithm'
+        children: [
+          {
+            text: '冒泡排序及优化',
+            link: '/algorithm/bubble_sort/'
+          }
+        ]
       },
       {
         text: 'More',
@@ -64,7 +70,7 @@ export default defineUserConfig({
     ]
   }),
   plugins: [
-    '@vuepress/back-to-top',
+    backToTopPlugin(),
     docsearchPlugin({
       appId: '',
       apiKey: '',
