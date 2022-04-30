@@ -4,4 +4,4 @@
 > 欢迎查阅~ 😄
 
 
-点此在线浏览 👉 [Live Page](https://zhou-tao.github.io/bloyoubian)
+点此在线浏览 👉 [Live Page](https://zhou-tao.github.io/blog/)
