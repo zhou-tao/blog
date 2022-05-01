@@ -37,6 +37,15 @@ export default defineUserConfig({
         ]
       },
       {
+        text: ' VuePress',
+        children: [
+          {
+            text: '搭建博客',
+            link: '/vuepress/blog/'
+          }
+        ]
+      },
+      {
         text: ' Node',
         link: '/nodejs/'
       },
@@ -55,6 +64,15 @@ export default defineUserConfig({
           {
             text: '冒泡排序及优化',
             link: '/algorithm/bubble_sort/'
+          }
+        ]
+      },
+      {
+        text: 'Markdown',
+        children: [
+          {
+            text: 'Markdown简历',
+            link: '/markdown/resume/'
           }
         ]
       },
