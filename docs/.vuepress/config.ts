@@ -90,10 +90,13 @@ export default defineUserConfig({
   plugins: [
     backToTopPlugin(),
     docsearchPlugin({
-      appId: '',
-      apiKey: '',
-      indexName: ''
+      appId: 'H9RIARRVX5',
+      apiKey: '13397fec8ee59b32e85c77e442cb23b0',
+      indexName: 'zhou-tao'
     })
   ],
-  // head: [['link', { rel: 'icon', href: '/images/logo.png' }]]
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3' }]
+  ]
 })
