@@ -1,102 +1,56 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
+// import gungnirTheme from 'vuepress-theme-gungnir'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { navbar, sidebar } from './configs'
 
 export default defineUserConfig({
   base: '/blog/',
-  lang: 'zh-CN',
-  title: '📚 Blog',
-  description: '一个简单的博客',
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/images/icons/favicon-16x16.png' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/images/icons/favicon-32x32.png' }]
+  ],
+  locales: {
+    '/': {
+      lang: 'zh-CN',
+      title: '📚 Blog',
+      description: '一个简单的博客'
+    },
+    '/en': {
+      lang: 'en-US',
+      title: '📚 Blog',
+      description: 'a simple blog'
+    },
+  },
   theme: defaultTheme({
     repo: 'zhou-tao/blog',
-    navbar: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/guide' },
-    ],
-    sidebar: [
-      {
-        text: 'Guide',
-        link: '/guide'
+    locales: {
+      '/': {
+        navbar: navbar.zh,
+        sidebar: sidebar.zh,
+        selectLanguageName: '简体中文',
+        selectLanguageText: '选择语言',
+        selectLanguageAriaLabel: '选择语言',  
       },
-      {
-        text: 'FrondEnd',
-        children: [
-          {
-            text: 'Javascript',
-            link: '/frontend/js/'
-          },
-          {
-            text: 'Vue',
-            link: '/frontend/vue/'
-          },
-          {
-            text: 'React',
-            link: '/frontend/react/'
-          }
-        ]
-      },
-      {
-        text: ' VuePress',
-        children: [
-          {
-            text: '搭建博客',
-            link: '/vuepress/blog/'
-          }
-        ]
-      },
-      {
-        text: ' Node',
-        link: '/nodejs/'
-      },
-      {
-        text: ' Linux',
-        children: [
-          {
-            text: '搭建NPM私库',
-            link: '/linux/npm_private_repo/'
-          }
-        ]
-      },
-      {
-        text: 'Algorithm',
-        children: [
-          {
-            text: '冒泡排序及优化',
-            link: '/algorithm/bubble_sort/'
-          }
-        ]
-      },
-      {
-        text: 'Markdown',
-        children: [
-          {
-            text: 'Markdown简历',
-            link: '/markdown/resume/'
-          }
-        ]
-      },
-      {
-        text: 'More',
-        children: [
-          {
-            text: 'GIS',
-            link: '/more/gis/'
-          }
-        ]
+      '/en': {
+        navbar: navbar.en,
+        sidebar: sidebar.en,
+        selectLanguageName: 'English',
+        selectLanguageText: 'Languages',
+        selectLanguageAriaLabel: 'Languages',
       }
-    ]
+    }
   }),
   plugins: [
     backToTopPlugin(),
     docsearchPlugin({
       appId: 'H9RIARRVX5',
       apiKey: '13397fec8ee59b32e85c77e442cb23b0',
-      indexName: 'zhou-tao'
+      indexName: 'zhou-tao',
+      searchParameters: {
+        facetFilters: ['tags:v2'],
+      }
     })
-  ],
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@docsearch/css@3' }]
   ]
 })
