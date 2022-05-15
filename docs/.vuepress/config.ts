@@ -46,11 +46,9 @@ export default defineUserConfig({
     backToTopPlugin(),
     docsearchPlugin({
       appId: 'H9RIARRVX5',
-      apiKey: '13397fec8ee59b32e85c77e442cb23b0',
-      indexName: 'zhou-tao',
-      searchParameters: {
-        facetFilters: ['tags:v2'],
-      }
+      apiKey: 'e4b0bf51480ba12bd3e714178311c61a',
+      // apiKey: '13397fec8ee59b32e85c77e442cb23b0',
+      indexName: 'zhou-tao'
     })
   ]
 })
