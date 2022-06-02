@@ -50,6 +50,14 @@ export const en: SidebarConfig = [
       {
         text: 'Bubble Sort And Optimize',
         link: '/en/algorithm/bubble_sort/'
+      },
+      {
+        text: 'Link List Sort',
+        link: '/algorithm/link_list_sort/'
+      },
+      {
+        text: 'Create Tree',
+        link: '/algorithm/create_tree/'
       }
     ]
   },

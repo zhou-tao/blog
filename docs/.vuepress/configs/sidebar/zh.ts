@@ -50,6 +50,14 @@ export const zh: SidebarConfig = [
       {
         text: '冒泡排序及优化',
         link: '/algorithm/bubble_sort/'
+      },
+      {
+        text: '链表排序',
+        link: '/algorithm/link_list_sort/'
+      },
+      {
+        text: '构造树',
+        link: '/algorithm/create_tree/'
       }
     ]
   },
