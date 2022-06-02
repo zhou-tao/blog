@@ -53,11 +53,11 @@ export const en: SidebarConfig = [
       },
       {
         text: 'Link List Sort',
-        link: '/algorithm/link_list_sort/'
+        link: '/en/algorithm/link_list_sort/'
       },
       {
         text: 'Create Tree',
-        link: '/algorithm/create_tree/'
+        link: '/en/algorithm/create_tree/'
       }
     ]
   },
