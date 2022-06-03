@@ -80,22 +80,27 @@ function sortArray(arr) {
       }
     }
   }
-  for (let i = 0; i < sortedArr.length; i++) {
+  if (last.id in befores) {
+    throw new Error('不可在last元素之后插入新元素')
+  }
+  if (first.id in afters) {
+    throw new Error('不可在first元素之前插入新元素')
+  }
+  for (let i = 1; i < sortedArr.length; i++) {
     const item = sortedArr[i]
+    if (item.id in afters) {
+      if (sortedArr[i - 1].after && sortedArr[i - 1].after !== item.id) {
+        throw new Error('待插入元素的before与上一元素after冲突')
+      }
+      sortedArr.splice(i, 0, afters[item.id])
+      delete afters[item.id]
+      i++
+    }
     if (item.id in befores) {
       if (sortedArr[i + 1].before && sortedArr[i + 1].before !== item.id) {
         throw new Error('待插入元素的after与下一元素before冲突')
       }
-      sortedArr.splice(i + 1, 0, item)
-      delete befores[item.id]
-      i++
-    }
-
-    else if (item.id in afters) {
-      if (sortedArr[i - 1].after && sortedArr[i - 1].after !== item.id) {
-        throw new Error('待插入元素的before与上一元素after冲突')
-      }
-      sortedArr.splice(i, 0, item)
+      sortedArr.splice(i + 1, 0, befores[item.id])
       delete befores[item.id]
       i++
     }
