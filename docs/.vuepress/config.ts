@@ -1,6 +1,5 @@
 import { defineUserConfig } from 'vuepress'
 import { defaultTheme } from '@vuepress/theme-default'
-// import gungnirTheme from 'vuepress-theme-gungnir'
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { navbar, sidebar } from './configs'
@@ -47,7 +46,6 @@ export default defineUserConfig({
     docsearchPlugin({
       appId: 'H9RIARRVX5',
       apiKey: 'e4b0bf51480ba12bd3e714178311c61a',
-      // apiKey: '13397fec8ee59b32e85c77e442cb23b0',
       indexName: 'zhou-tao'
     })
   ]
