@@ -52,7 +52,7 @@ export const en: SidebarConfig = [
         link: '/en/linux/npm_private_repo/'
       },
       {
-        text: 'Inode、Hard Link and Soft Link',
+        text: 'Linked File System',
         link: '/en/linux/linked_file_system/'
       }
     ]

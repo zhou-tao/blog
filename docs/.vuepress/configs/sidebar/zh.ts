@@ -52,7 +52,7 @@ export const zh: SidebarConfig = [
         link: '/linux/npm_private_repo/'
       },
       {
-        text: 'inode、硬链接和软链接',
+        text: '链接文件系统',
         link: '/linux/linked_file_system/'
       }
     ]
