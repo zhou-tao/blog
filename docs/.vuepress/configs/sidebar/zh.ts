@@ -19,6 +19,15 @@ export const zh: SidebarConfig = [
       {
         text: 'React',
         link: '/frontend/react/'
+      },
+      {
+        text: 'Webpack',
+        children: [
+          {
+            text: '构建优化',
+            link: '/frontend/webpack/build_optimize/'
+          },
+        ]
       }
     ]
   },
@@ -41,6 +50,10 @@ export const zh: SidebarConfig = [
       {
         text: '搭建NPM私库',
         link: '/linux/npm_private_repo/'
+      },
+      {
+        text: 'inode、硬链接和软链接',
+        link: '/linux/linked_file_system/'
       }
     ]
   },

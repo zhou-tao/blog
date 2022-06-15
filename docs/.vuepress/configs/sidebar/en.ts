@@ -19,7 +19,16 @@ export const en: SidebarConfig = [
       {
         text: 'React',
         link: '/en/frontend/react/'
-      }
+      },
+      {
+        text: 'Webpack',
+        children: [
+          {
+            text: 'Build Optimize',
+            link: '/en/frontend/webpack/build_optimize/'
+          },
+        ]
+      },
     ]
   },
   {
@@ -41,6 +50,10 @@ export const en: SidebarConfig = [
       {
         text: 'Build Npm Private Repo',
         link: '/en/linux/npm_private_repo/'
+      },
+      {
+        text: 'Inode、Hard Link and Soft Link',
+        link: '/en/linux/linked_file_system/'
       }
     ]
   },
