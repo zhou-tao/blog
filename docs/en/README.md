@@ -2,10 +2,10 @@
 home: true
 actions:
   - text: Introduction
-    link: /guide/
+    link: /en/guide/
     type: primary
   - text: Get Started
-    link: /guide/
+    link: /en/guide/
     type: secondary
 features:
   - title: 学习记录

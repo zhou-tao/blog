@@ -1,5 +1,5 @@
-# 指南
+# Guide
 
-### 文章分类
+### Article Sort
 
-### 思维导图
+### Mind Mapping
