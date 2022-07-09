@@ -42,7 +42,12 @@ export const en: SidebarConfig = [
   },
   {
     text: ' Node',
-    link: '/en/nodejs/'
+    children: [
+      {
+        text: 'nvm',
+        link: '/en/nodejs/nvm/'
+      }
+    ]
   },
   {
     text: ' Linux',

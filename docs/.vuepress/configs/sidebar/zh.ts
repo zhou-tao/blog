@@ -42,7 +42,12 @@ export const zh: SidebarConfig = [
   },
   {
     text: ' Node',
-    link: '/nodejs/'
+    children: [
+      {
+        text: 'nvm',
+        link: '/nodejs/nvm/'
+      }
+    ]
   },
   {
     text: ' Linux',
