@@ -60,7 +60,7 @@ exit status 1：乱码...
 
 两种解决方法：
 
-1. 进入cmd所在目录 `C:\Windows\system32`，找到cmd.exe右键使用管理员运行（太麻烦）
+1. `win+q` 搜索cmd，右键命令提示符选中以管理员身份运行
 2. 右键左下角win图标，点击Windows PowerShell(管理员)
 
 然后就可以愉快地切换版本了！💯
