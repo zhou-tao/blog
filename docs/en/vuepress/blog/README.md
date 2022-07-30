@@ -64,8 +64,9 @@ shamefully-hoist=true
 按照一定的步骤，你可以将你的静态网页部署到 [GitHub Pages]((https://pages.github.com/))上。
 幸运的是，VuePress连GitHub Pages的[部署文档](https://v2.vuepress.vuejs.org/zh/guide/deployment.html#github-pages)都准备好了，开始跟着文档傻瓜式操作即可。
 
-::: warning
-看完文档后，我相信大部分人选择最方便的CI方式持续集成自己的网页，但当你按照文档操作完，提交最新的代码到GitHub后。发现自己的CI流程失败了，报错信息大概意思是无权限将build后的dist文件夹 `push` 到 `gh-pages` 分支。
+::: tip
+配置完github actions文件后，即可提交代码至github仓库，此时你可以在actions tab内查看运行状态及日志。
+一切正常后，进入settings下pages设置branch为gh-pages，并点击save保存即可访问。默认地址为：`https://<USERNAME>.github.io/<REPO_NAME>`
 :::
 
-若出现此问题，请打开你的本项目GitHub仓库的`Setting`，找到左侧`Actions/General`中的`Workflow permissions`设置项。将默认的`Read repository contents permission`勾选换成`Read and write permissions`即可，这样之后你的Actions就具有写的权限了，重新执行`CI`，你就可以通过你设置的`**.github.io.**`地址访问你的博客网站了:100:。
+若出现报错信息无权限将build后的dist文件夹 `push` 到 `gh-pages` 分支。请打开你的本项目GitHub仓库的`Setting`，找到左侧`Actions/General`中的`Workflow permissions`设置项。将默认的`Read repository contents permission`勾选换成`Read and write permissions`即可，这样之后你的Actions就具有写的权限了，重新执行`CI`，即可访问你的博客网站了:100:。
