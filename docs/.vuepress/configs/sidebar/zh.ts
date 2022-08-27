@@ -10,7 +10,12 @@ export const zh: SidebarConfig = [
     children: [
       {
         text: 'Javascript',
-        link: '/frontend/js/'
+        children: [
+          {
+            text: '表达式转换',
+            link: '/frontend/js/exp_conversion/'
+          },
+        ]
       },
       {
         text: 'Vue',

@@ -10,7 +10,12 @@ export const en: SidebarConfig = [
     children: [
       {
         text: 'Javascript',
-        link: '/en/frontend/js/'
+        children: [
+          {
+            text: 'expression conversion',
+            link: '/en/frontend/js/exp_conversion/'
+          },
+        ]
       },
       {
         text: 'Vue',
