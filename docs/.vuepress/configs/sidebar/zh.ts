@@ -51,6 +51,10 @@ export const zh: SidebarConfig = [
       {
         text: 'nvm',
         link: '/nodejs/nvm/'
+      },
+      {
+        text: 'node-sass安装',
+        link: '/nodejs/node-sass'
       }
     ]
   },

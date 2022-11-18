@@ -51,6 +51,10 @@ export const en: SidebarConfig = [
       {
         text: 'nvm',
         link: '/en/nodejs/nvm/'
+      },
+      {
+        text: 'node-sass installation',
+        link: '/en/nodejs/node-sass/'
       }
     ]
   },
