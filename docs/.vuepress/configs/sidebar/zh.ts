@@ -54,7 +54,7 @@ export const zh: SidebarConfig = [
       },
       {
         text: 'node-sass安装',
-        link: '/nodejs/node-sass'
+        link: '/nodejs/node-sass/'
       }
     ]
   },

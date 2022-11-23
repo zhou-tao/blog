@@ -1,28 +1,19 @@
 # 指南
 
-### 文章分类
+### 分类
 
-### 思维导图
+### 目录
 
-<mindmap v-model="menuData" zoom style="margin-top: 24px; height: 700px"></mindmap>
+<ClientOnly>
+  <mindmap v-model="data" zoom/>
+</ClientOnly>
 
 <script setup>
-import mindmap from 'vue3-mindmap'
-import 'vue3-mindmap/dist/style.css'
+import { inject } from 'vue'
 
-import { sidebar } from '../../../configs'
-
-function convertData (arr) {
-  return arr.map(({ text, children, ...rest }) => ({
-    name: text,
-    children: children ? convertData(children) : children,
-    ...rest
-  }))
-}
-
-const menuData = [{
+const data = [{
   name: 'BLOG',
-  children: convertData(sidebar.zh)
+  children: inject('zhMenu')
 }]
 
 </script>
