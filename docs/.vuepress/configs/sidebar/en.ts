@@ -1,6 +1,6 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import type { SidebarConfigArray } from '@vuepress/theme-default'
 
-export const en: SidebarConfig = [
+export const en: SidebarConfigArray = [
   {
     text: 'Guide',
     link: '/en/guide'

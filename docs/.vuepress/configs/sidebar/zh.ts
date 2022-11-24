@@ -1,6 +1,6 @@
-import type { SidebarConfig } from '@vuepress/theme-default'
+import type { SidebarConfigArray } from '@vuepress/theme-default'
 
-export const zh: SidebarConfig = [
+export const zh: SidebarConfigArray = [
 {
     text: '向导',
     link: '/guide'
