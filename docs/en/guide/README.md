@@ -1,6 +1,10 @@
 # Guide
 
 ### Classification
+<ClientOnly>
+  <bubble-chart locale="en" />
+</ClientOnly>
+
 
 ### Directory
 

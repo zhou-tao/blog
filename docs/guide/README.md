@@ -2,6 +2,10 @@
 
 ### 分类
 
+<ClientOnly>
+  <bubble-chart locale="zh" />
+</ClientOnly>
+
 ### 目录
 
 <ClientOnly>

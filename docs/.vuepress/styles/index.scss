@@ -8,13 +8,13 @@
   --c-mindmap-color: #4b4b4b;
   --c-mindmap-root-color: #fff;
 
-  /* mindmap custom style */
+  /* mindmap & echarts custom style */
   .Mindmap_container_fgvb6 {
     margin-top: 24px;
     height: 720px
   }
 
-  .Mindmap_svg_fgvb6 {
+  .Mindmap_svg_fgvb6, #bubble_charts {
     background-color: var(--c-mindmap-bg);
   }
 
