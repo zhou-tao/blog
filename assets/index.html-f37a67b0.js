@@ -1,0 +1,1 @@
+import{_ as t,p as s,q as a,R as e,t as n}from"./framework-fee247ae.js";const o={},c=e("h1",{id:"nodejs",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#nodejs","aria-hidden":"true"},"#"),n(" NodeJs")],-1),d=[c];function r(_,i){return s(),a("div",null,d)}const l=t(o,[["render",r],["__file","index.html.vue"]]);export{l as default};

@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-76e503cf","path":"/en/frontend/webpack/build_optimize/","title":"构建优化","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1655274544000,"contributors":[{"name":"zhoutao","email":"zhoutao_233@163.com","commits":1}]},"filePathRelative":"en/frontend/webpack/build_optimize/README.md"}');export{e as data};

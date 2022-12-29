@@ -1,0 +1,1 @@
+import{_ as t,p as a,q as c,R as e,t as r}from"./framework-fee247ae.js";const n={},s=e("h1",{id:"react",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#react","aria-hidden":"true"},"#"),r(" React")],-1),o=[s];function _(d,i){return a(),c("div",null,o)}const l=t(n,[["render",_],["__file","index.html.vue"]]);export{l as default};

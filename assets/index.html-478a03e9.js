@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6a04648b","path":"/en/more/gis/","title":"GIS","lang":"en-US","frontmatter":{},"headers":[],"git":{"updatedTime":1652452383000,"contributors":[{"name":"zhoutao","email":"zhoutao_233@163.com","commits":1}]},"filePathRelative":"en/more/gis/README.md"}');export{e as data};
