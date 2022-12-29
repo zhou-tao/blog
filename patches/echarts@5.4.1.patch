@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index 1ebccac91f2575173ea8975f1999a843804803f7..6374585ec7d8dfa95883b9be29e02527d8e38221 100644
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,7 @@
+ {
+   "name": "echarts",
+   "version": "5.4.1",
++  "type": "module",
+   "description": "Apache ECharts is a powerful, interactive charting and data visualization library for browser",
+   "license": "Apache-2.0",
+   "keywords": [

@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index bcd5cc7b971fb6ce9983ce4e9b84a9b613d31722..8985014492e4d8db2d32976894dc1fe7854134f5 100644
+--- a/package.json
++++ b/package.json
+@@ -2,6 +2,7 @@
+   "name": "zrender",
+   "version": "5.4.1",
+   "description": "A lightweight graphic library providing 2d draw for Apache ECharts",
++  "type": "module",
+   "keywords": [
+     "canvas",
+     "svg",
