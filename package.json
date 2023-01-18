@@ -1,0 +1,24 @@
+{
+  "name": "blog",
+  "private": true,
+  "description": "my blog",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "blog",
+    "vitepress"
+  ],
+  "author": "zhoutao <zhoutao_233@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "eslint": "^8.32.0",
+    "typescript": "^4.9.4",
+    "vitepress": "1.0.0-alpha.38",
+    "vue": "^3.2.45"
+  }
+}
