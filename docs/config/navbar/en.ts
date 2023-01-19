@@ -1,6 +1,4 @@
-import type { NavbarConfig } from '@vuepress/theme-default'
-
-export const en: NavbarConfig = [
-  { text: 'Home', link: '/en' },
-  { text: 'Guide', link: '/en/guide' }
+export const en: NavItem[] = [
+  { text: 'Home', link: '/en/' },
+  { text: 'About', link: '/en/introduction/about-me' }
 ]

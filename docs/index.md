@@ -4,13 +4,17 @@ layout: home
 title: Blog
 
 hero:
-  name: Blog
-  text: 基于vitepress搭建的个人博客站
-  tagline: Simple, powerful, and performant. Meet the modern SSG framework you've always wanted.
+  name: BLOG
+  text: 用于个人的知识记录与经验分享
+  tagline: 树叶的一生，只是为了归根么？
+  image:
+    src: /banner.svg
+    width: 400
+    alt: Blog
   actions:
     - theme: brand
-      text: 博客预览
-      link: /guide/getting-started
+      text: 进入博客
+      link: /introduction/about-me
     - theme: alt
       text: 源码地址
       link: https://github.com/zhou-tao/blog

@@ -1,45 +1,59 @@
 export const en: Sidebar = [
   {
-    text: 'Guide',
-    link: '/en/guide'
-  },
-  {
-    text: 'FrondEnd',
+    text: 'Introduction',
     items: [
       {
-        text: 'Javascript',
-        items: [
-          {
-            text: 'expression conversion',
-            link: '/en/frontend/js/exp_conversion/'
-          },
-        ]
+        text: 'About Me',
+        link: '/en/introduction/about-me'
       },
+      // {
+      //   text: 'Directory',
+      //   link: '/en/introduction/directory'
+      // }
+    ]
+  },
+  {
+    text: 'Javascript',
+    items: [
       {
-        text: 'Vue',
-        link: '/en/frontend/vue/'
-      },
-      {
-        text: 'React',
-        link: '/en/frontend/react/'
-      },
-      {
-        text: 'Webpack',
-        items: [
-          {
-            text: 'Build Optimize',
-            link: '/en/frontend/webpack/build_optimize/'
-          },
-        ]
+        text: 'expression conversion',
+        link: '/en/javascript/exp-conversion'
       },
     ]
   },
+  // {
+  //   text: 'Vue',
+  //   items: [
+  //     {
+  //       text: 'vue',
+  //       link: '/en/vue/index'
+  //     }
+  //   ]
+  // },
+  // {
+  //   text: 'React',
+  //   items: [
+  //     {
+  //       text: 'react',
+  //       link: '/en/react/index'
+  //     }
+  //   ]
+  // },
+  // {
+  //   text: 'Webpack',
+  //   items: [
+  //     {
+  //       text: 'Build Optimize',
+  //       link: '/en/webpack/build-optimize'
+  //     },
+  //   ]
+  // },
   {
     text: ' VuePress',
     items: [
       {
         text: 'Build Blog',
-        link: '/en/vuepress/blog/'
+        link: '/en/vuepress/blog'
       }
     ]
   },
@@ -48,11 +62,11 @@ export const en: Sidebar = [
     items: [
       {
         text: 'nvm',
-        link: '/en/nodejs/nvm/'
+        link: '/en/nodejs/nvm'
       },
       {
         text: 'node-sass installation',
-        link: '/en/nodejs/node-sass/'
+        link: '/en/nodejs/node-sass'
       }
     ]
   },
@@ -61,11 +75,11 @@ export const en: Sidebar = [
     items: [
       {
         text: 'Build Npm Private Repo',
-        link: '/en/linux/npm_private_repo/'
+        link: '/en/linux/npm-private-repo'
       },
       {
         text: 'Linked File System',
-        link: '/en/linux/linked_file_system/'
+        link: '/en/linux/linked-file-system'
       }
     ]
   },
@@ -74,15 +88,15 @@ export const en: Sidebar = [
     items: [
       {
         text: 'Bubble Sort And Optimize',
-        link: '/en/algorithm/bubble_sort/'
+        link: '/en/algorithm/bubble-sort'
       },
       {
         text: 'Link List Sort',
-        link: '/en/algorithm/link_list_sort/'
+        link: '/en/algorithm/linked-list-sort'
       },
       {
         text: 'Create Tree',
-        link: '/en/algorithm/create_tree/'
+        link: '/en/algorithm/create-tree'
       }
     ]
   },
@@ -91,17 +105,17 @@ export const en: Sidebar = [
     items: [
       {
         text: 'Markdown Resume',
-        link: '/en/markdown/resume/'
+        link: '/en/markdown/resume'
       }
     ]
   },
-  {
-    text: 'More',
-    items: [
-      {
-        text: 'GIS',
-        link: '/en/more/gis/'
-      }
-    ]
-  }
+  // {
+  //   text: 'More',
+  //   items: [
+  //     {
+  //       text: 'GIS',
+  //       link: '/en/more/gis'
+  //     }
+  //   ]
+  // }
 ]
