@@ -1,18 +1,21 @@
+<div align="center">
+  <p align="center">
+    <img alt="Bo-Admin" align="center" src="docs/public/banner.svg" width="120"/>
+  </p>
+</div>
 
-<h1 align="center">📚 My Blog</h1>
-
-> A front-end developer blog site!
+A front-end developer's blog site!
 
 ### Including but not limited to the following
 
-- Front-End: [javascript](https://zhou-tao.github.io/blog/en/frontend/js/), [vue](https://zhou-tao.github.io/blog/en/frontend/vue/), [react](https://zhou-tao.github.io/blog/en/frontend/react/)...
+- Front-End: [javascript](https://zhou-tao.github.io/blog/javascript/exp-conversion), [vue](https://zhou-tao.github.io/blog/vue/), [react](https://zhou-tao.github.io/blog/react/)...
 
 - Node: [nvm](https://zhou-tao.github.io/blog/en/nodejs/nvm/)...
 
-- Linux: [npm_private_repo](https://zhou-tao.github.io/blog/en/linux/npm_private_repo/), [linked_file_system](https://zhou-tao.github.io/blog/en/linux/linked_file_system/)...
+- Linux: [npm_private_repo](https://zhou-tao.github.io/blog/linux/npm-private-repo/), [linked_file_system](https://zhou-tao.github.io/blog/linux/linked-file-system/)...
 
-- Algorithm: [bubble_sort](https://zhou-tao.github.io/blog/en/algorithm/bubble_sort/), [link_list_sort](https://zhou-tao.github.io/blog/en/algorithm/link_list_sort/), [create_tree](https://zhou-tao.github.io/blog/en/algorithm/create_tree/)...
+- Algorithm: [bubble_sort](https://zhou-tao.github.io/blog/algorithm/bubble-sort/), [linked_list_sort](https://zhou-tao.github.io/blog/algorithm/linked-list-sort/), [create_tree](https://zhou-tao.github.io/blog/algorithm/create-tree/)...
 
-- More: [gis](https://zhou-tao.github.io/blog/en/more/gis/)
+- More...
 
-### 👉 Click here to visit the [homepage](https://zhou-tao.github.io/blog/) !
+### 👉 Click here to visit the [blog site](https://zhou-tao.github.io/blog/) !
