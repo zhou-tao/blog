@@ -1,1 +1,0 @@
-import{_ as t,p as a,q as s,R as e,t as c}from"./framework-fee247ae.js";const n={},r=e("h1",{id:"gis",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#gis","aria-hidden":"true"},"#"),c(" GIS")],-1),o=[r];function _(d,i){return a(),s("div",null,o)}const l=t(n,[["render",_],["__file","index.html.vue"]]);export{l as default};
