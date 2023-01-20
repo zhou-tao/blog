@@ -24,7 +24,7 @@ export default defineConfig({
         editLink: {
           pattern: 'https://github.com/zhou-tao/blog/edit/main/docs/:path',
           text: '在GitHub上编辑本页'
-        },
+        }
       }
     },
     en: {
