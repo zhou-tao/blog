@@ -7,7 +7,7 @@
 
 <img src="/images/resume.jpg" alt="Example Resume">
 
-<a href="/markdown/example_resume.md" download>点此</a>获取该简历模板文件。
+<a href="https://zhou-tao.github.io/blog/markdown/example_resume.md" download>点此</a>获取该简历模板文件。
 
 ## 导出HTML
 简历编写完成之后，我们利用MarkText的导出功能。选择左上角菜单栏的`File`->`Export`，选择`HTML`，继续点击`Export`即可生成一个`HTML`文件。这里我们不能直接选择导出`PDF`，因为我们先导出成`HTML`可以在样式上做修改。
