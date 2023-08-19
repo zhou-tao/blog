@@ -1,5 +1,6 @@
 {
   "name": "blog",
+  "type": "module",
   "private": true,
   "description": "my blog",
   "author": "toryz <zhoutao_233@163.com>",
@@ -12,13 +13,26 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "preview": "vitepress preview docs",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "simple-git-hooks"
   },
   "devDependencies": {
     "@toryz/eslint-config": "^0.1.4",
+    "@types/node": "^20.5.1",
+    "chalk": "^5.3.0",
     "eslint": "^8.47.0",
-    "typescript": "^4.9.4",
-    "vitepress": "1.0.0-alpha.38",
-    "vue": "^3.2.45"
+    "lint-staged": "^14.0.0",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.1.6",
+    "vitepress": "1.0.0-rc.4",
+    "vue": "^3.3.4"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
