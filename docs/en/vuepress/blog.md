@@ -44,7 +44,7 @@ yarn docs:dev
 :::
 
 此问题属于**pnpm**默认机制问题 [点此查看](https://pnpm.io/npmrc#shamefully-hoist)，解决方法为需要在根目录添加一个 `.pnpmrc` 文件，并在文件中添加如下内容后，重新 `pnpm i` 即可。
-```json
+```bash
 shamefully-hoist=true
 ```
 

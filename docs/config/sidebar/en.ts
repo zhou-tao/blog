@@ -5,7 +5,7 @@ export const en: Sidebar = [
       {
         text: 'About Me',
         link: '/en/introduction/about-me'
-      },
+      }
       // {
       //   text: 'Directory',
       //   link: '/en/introduction/directory'
@@ -18,7 +18,7 @@ export const en: Sidebar = [
       {
         text: 'expression conversion',
         link: '/en/javascript/exp-conversion'
-      },
+      }
     ]
   },
   // {
@@ -108,7 +108,7 @@ export const en: Sidebar = [
         link: '/en/markdown/resume'
       }
     ]
-  },
+  }
   // {
   //   text: 'More',
   //   items: [

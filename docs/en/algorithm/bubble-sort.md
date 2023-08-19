@@ -9,7 +9,7 @@
 
 这里以从小到大排序为例，冒泡排序经典代码实现如下：
 ```js
-const bubbleSort = arr => {
+const bubbleSort = (arr) => {
   for (let i = 0; i < arr.length - 1; i++) {
     for (let j = 0; j < arr.length - i - 1; j++) {
       if (arr[j + 1] < arr[j]) {
@@ -23,7 +23,7 @@ const bubbleSort = arr => {
 ```js
 // 数据交换
 const swap = (array, index1, index2) => {
-  [array[index1],array[index2]] = [array[index2],array[index1]]   // 利用解构
+  [array[index1], array[index2]] = [array[index2], array[index1]] // 利用解构
 }
 ```
 
@@ -32,7 +32,7 @@ const swap = (array, index1, index2) => {
 
 ```js
 // 由于冒泡是相邻两元素依次相比，则若出现一轮未发生元素更换的情况下：即为数组已经有序,则可提前结束
-const bubbleSortOp1 = arr => {
+const bubbleSortOp1 = (arr) => {
   for (let i = 0; i < arr.length - 1; i++) {
     // 每大轮给与一个标记
     let flag = true
@@ -44,7 +44,7 @@ const bubbleSortOp1 = arr => {
       }
     }
     // 没交换即有序可提前结束
-    if(flag) break
+    if (flag) break
   }
 }
 ```
@@ -52,9 +52,9 @@ const bubbleSortOp1 = arr => {
 结合优化一中讨论的，我们要使得整轮都有序的情况下才可以提前结束排序操作。但当我们遇到比如 `[3,2,1,4,5,6]` 这种数组时，后面的`4,5,6`已经有序的情况下我们在每大轮的比较里可以跳过这部分的小轮两两相比，这样又可以提高一部分的效率。
 ```js
 // 记录最后一个更换元素时的索引值，下一轮的比较可以自动跳过之后的有序队列
-const bubbleSortOp2 = arr => {
-  let flagIndex;
-  let lastIndex = arr.length - 1;
+const bubbleSortOp2 = (arr) => {
+  let flagIndex
+  let lastIndex = arr.length - 1
   while (true) {
     let flag = true
     // 跳过后面有序的部分
@@ -67,7 +67,7 @@ const bubbleSortOp2 = arr => {
       }
     }
     lastIndex = flagIndex
-    if(flag) break
+    if (flag) break
   }
 }
 ```
@@ -75,47 +75,49 @@ const bubbleSortOp2 = arr => {
 以上的优化总的来说都是分大小两轮，每一大轮排出一个最值到边界。而接下来我们有一个想法，就是一大轮我们同时在左右两边各排出一个最大值与最小值，这样我们的排序效率又会更进一步了。
 ```js
 // 每大轮从左到右选出最大的同时从右到左选出最小的并结合前两次优化
-const bubbleSortOp3 = arr => {
-  //左边开始索引
+const bubbleSortOp3 = (arr) => {
+  // 左边开始索引
   let start = 0
-  //右边开始索引
+  // 右边开始索引
   let end = arr.length - 1
   while (start < end) {
-    //每大轮向右排出最大值
+    // 每大轮向右排出最大值
     for (let i = start; i < end; i++) {
       if (arr[i] > arr[i + 1]) swap(arr, i, i + 1)
     }
-    //排出一个最大值，终点向左移一位
+    // 排出一个最大值，终点向左移一位
     end--
-    //每大轮向左排出最小值
+    // 每大轮向左排出最小值
     for (let i = end; i > start; i--) {
       if (arr[i] < arr[i - 1]) swap(arr, i, i - 1)
     }
-    //排出一个最小值，起点向右移一位
+    // 排出一个最小值，起点向右移一位
     start++
   }
 }
 ```
 到这里，我们的优化基本就到极致，但我们没有利用到前两步的优化思想，故 综上：
 ```js
-const bubbleSortOp4 = arr => {
-  let start = 0, startPos = start
-  let end = arr.length - 1, endPos = end
+const bubbleSortOp4 = (arr) => {
+  let start = 0
+  let startPos = start
+  let end = arr.length - 1
+  let endPos = end
   while (start < end) {
     // let flag = true
     for (let i = start; i < end; i++) {
-        if (arr[i] > arr[i + 1]) {
-          swap(arr, i, i + 1);
-          endPos = i
-          // flag = false
-        }
+      if (arr[i] > arr[i + 1]) {
+        swap(arr, i, i + 1)
+        endPos = i
+        // flag = false
+      }
     }
     // 利用endPos与end位置关系来替代flag变量
     if (endPos === end) return
     end = endPos
     for (let i = end; i > start; i--) {
-      if(arr[i] < arr[i - 1]){
-        swap(arr, i, i - 1);
+      if (arr[i] < arr[i - 1]) {
+        swap(arr, i, i - 1)
         startPos = i
         // flag = false
       }

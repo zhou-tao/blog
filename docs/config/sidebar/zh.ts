@@ -5,7 +5,7 @@ export const zh: Sidebar = [
       {
         text: '关于我',
         link: '/introduction/about-me'
-      },
+      }
       // {
       //   text: '目录',
       //   link: '/introduction/directory'
@@ -18,7 +18,7 @@ export const zh: Sidebar = [
       {
         text: '表达式转换',
         link: '/javascript/exp-conversion'
-      },
+      }
     ]
   },
   // {
@@ -108,7 +108,7 @@ export const zh: Sidebar = [
         link: '/markdown/resume'
       }
     ]
-  },
+  }
   // {
   //   text: '更多',
   //   items: [
